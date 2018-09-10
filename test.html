@@ -1,0 +1,353 @@
+<style type="text/css">
+    .user_header_nav {
+        width: 1920px;
+        height: 40px;
+        background-color: #10100F;
+        margin: 0;
+    }
+
+    .user_header_nav_container {
+        width: 990px;
+        margin: 0 0 0 440px;
+        height: 40px;
+    }
+
+    .user_header_nav_container_float {
+        float: left;
+    }
+
+    .user_header_nav_container_float_list {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .user_header_nav_container_float_list_item {
+        float: left;
+        width: 86px;
+        height: 40px;
+    }
+
+    .user_header_nav_container_float_list_item_link {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        display: block;
+        line-height: 37px;
+    }
+
+    .user_header_nav_container_float_list_item:hover {
+        background-color: #6c1c00;
+    }
+
+    .user_item_link_list1:hover .user_header_nav_container_float_list_item_menu {
+        height: 126px;
+    }
+
+    .user_item_link_list2:hover .user_header_nav_container_float_list_item_menu {
+        height: 126px;
+    }
+
+    .user_item_picture1:hover .user_header_nav_container_float_list_item_area {
+        height: 320px;
+    }
+
+    .user_item_mixin1:hover .user_header_nav_container_float_list_item_block {
+        height: 376px;
+    }
+
+    .user_header_nav_container_float_list_item_menu {
+        width: 86px;
+        height: 0;
+        position: absolute;
+        top: 150px;
+        z-index: 4;
+        background-color: #ffffff;
+        font-size: 16px;
+        line-height: 37px;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .user_header_nav_container_float_list_item_area {
+        width: 100%;
+        height: 0;
+        top: 145px;
+        left: -11px;
+        position: absolute;
+        z-index: 4;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .user_header_nav_container_float_list_item_block {
+        width: 1208px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+        background-color: #ffffff;
+    }
+
+    .user_header_nav_container_float_list_item_area .user_header_nav_container_float_list_item_area_img {
+        margin: 0 auto;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .user_header_nav_container_float_list_item_menu .user_header_nav_container_float_list_item_menu_link {
+        display: block;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .userDrap {
+        position: absolute;
+        left: 0;
+        padding-left: 67px;
+    }
+
+    .userDrapLeft {
+        width: 55%;
+        float: left;
+    }
+
+    .userDrapRight {
+        width: 45%;
+        float: left;
+    }
+
+    .userDrapLeft dl {
+        width: 70px;
+        float: left;
+        margin-right: 81px;
+        padding: 0;
+    }
+
+    .userDrapLeft dl dt {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 24px;
+        margin-top: 50px;
+        margin-bottom: 12px;
+    }
+
+    .userDrapLeft dl dd {
+        line-height: 38px;
+        height: 38px;
+        margin: 0;
+        padding: 0;
+        margin-left: 3px
+    }
+
+    .userDrapLeft dl dd i {
+        background: url(//img10.360buyimg.com/imgzone/jfs/t17217/149/2250466881/1485/52be6e6/5aec319bN091e93f6.jpg) no-repeat 5px;
+        width: 17px;
+        height: 13px;
+        float: left;
+    }
+
+    .userDrapLeft dl dd a {
+        font-size: 13px;
+        color: #393939;
+        float: left;
+    }
+
+    .userDrapLeft dl dd em {
+        float: right;
+    }
+
+    .userDrapRight {
+        margin-top: 40px
+    }
+
+    .userDrapRight div {
+        float: left
+    }
+
+    .userrightThr,
+    .userrightFour {
+        margin-top: 36px
+    }
+
+    .userrightOne,
+    .userrightThr {
+        margin-right: 30px;
+    }
+
+    .user_header_nav_container_search {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .user_header_nav_container_search_input {
+        padding: 0 0 0 5px;
+        border: 0;
+        width: 85px;
+        height: 20px;
+        background-color: #ffffff;
+        color: #333333;
+        vertical-align: top;
+        outline: none;
+        line-height: 20px;
+        font-family: arial, "microsoft yahei";
+    }
+
+    .user_header_nav_container_search_submit {
+        margin-left: -5px;
+        padding: 0 10px;
+        border: 0;
+        height: 20px;
+        background-color: #646464;
+        color: #ffffff;
+        vertical-align: top;
+        cursor: pointer;
+        line-height: 20px;
+    }
+</style>
+<div class="user_header_nav">
+    <div class="user_header_nav_container">
+        <div class="user_header_nav_container_float">
+            <ul class="user_header_nav_container_float_list">
+                <li class="user_header_nav_container_float_list_item">
+                    <a class="user_header_nav_container_float_list_item_link" href="#">首页</a>
+                </li>
+                <li class="user_header_nav_container_float_list_item user_item_mixin1">
+                    <a class="user_header_nav_container_float_list_item_link" href="#" target="_blank">一级导航</a>
+                    <div class="user_header_nav_container_float_list_item_block">
+                        <div class="userDrap">
+                            <div class="userDrapLeft">
+                                <dl>
+                                    <dt>
+                                        <a href="#" target="_blank">二级导航</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em><i></i>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="#" target="_blank">二级导航</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em><i></i>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="#" target="_blank">二级导航</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="#" target="_blank">二级导航</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" target="_blank">三级导航</a><em>&gt;</em>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="userDrapRight">
+                                <div class="userrightOne">
+                                    <a href="#" target="_blank"><img src="//img10.360buyimg.com/imgzone/jfs/t17191/54/2217822933/23200/5c0302ce/5aec3323Ne83af9f5.jpg"
+                                            width="223" height="129"></a>
+                                </div>
+                                <div class="rightTow">
+                                    <a href="#" target="_blank"><img src="//img10.360buyimg.com/imgzone/jfs/t19654/298/2242992012/23944/2462661c/5aec331fNc0f40f6c.jpg"
+                                            width="223" height="129"></a>
+                                </div>
+                                <div class="userrightThr">
+                                    <a href="#" target="_blank"><img src="//img10.360buyimg.com/imgzone/jfs/t16945/93/2282563284/19747/797bb6da/5aec3323N13f5353d.jpg"
+                                            width="223" height="129"></a>
+                                </div>
+                                <div class="userrightFour">
+                                    <a href="#" target="_blank"><img src="//img10.360buyimg.com/imgzone/jfs/t18463/51/2196200852/20598/2b43e1d2/5aec3323Ne0b230c0.jpg"
+                                            width="223" height="129"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user_header_nav_container_float_list_item user_item_link_list1">
+                    <a class="user_header_nav_container_float_list_item_link" href="#" target="_blank">一级导航</a>
+                    <div class="user_header_nav_container_float_list_item_menu">
+                        <a class="user_header_nav_container_float_list_item_menu_link" href="#">二级导航</a>
+                        <a class="user_header_nav_container_float_list_item_menu_link" href="#">二级导航</a>
+                        <a class="user_header_nav_container_float_list_item_menu_link" href="#">二级导航</a>
+                    </div>
+                </li>
+                <li class="user_header_nav_container_float_list_item user_item_picture1">
+                    <a class="user_header_nav_container_float_list_item_link" href="#" target="_blank">一级导航</a>
+                    <div class="user_header_nav_container_float_list_item_area">
+                        <img class="user_header_nav_container_float_list_item_area_img" src="//img14.360buyimg.com/cms/jfs/t23983/316/2159958123/40427/8b7b7041/5b76778fN1a771cef.png"
+                        />
+                    </div>
+                </li>
+                <li class="user_header_nav_container_float_list_item user_item_link_list2">
+                    <a class="user_header_nav_container_float_list_item_link" href="#" target="_blank">一级导航</a>
+                    <div class="user_header_nav_container_float_list_item_menu">
+                        <a class="user_header_nav_container_float_list_item_menu_link" href="#">二级导航</a>
+                        <a class="user_header_nav_container_float_list_item_menu_link" href="#">二级导航</a>
+                        <a class="user_header_nav_container_float_list_item_menu_link" href="#">二级导航</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form class="user_header_nav_container_search" enctype="application/x-www-form-urlenquoted" accept-charset="UTF-8" method="get"
+            target="_blank" action="https://mall.jd.com/view_search-405329-1000001784-1000001784-0-1-0-0-1-1-24.html">
+            <span>价格同步：</span>
+            <span jdprice="10560606371" jshop="price">0</span>
+            <input class="user_header_nav_container_search_input" value="搜索" name="keyword" type="text" />
+            <input class="user_header_nav_container_search_submit" value="搜索" type="submit" />
+        </form>
+    </div>
+</div>
